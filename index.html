@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for the Selfcare Scan mobile app.">
+  <title>Privacy Policy | Selfcare Scan</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #122019;
+      --muted: #607a6e;
+      --green: #00885f;
+      --mint: #e2fbf1;
+      --line: #dbe9e3;
+      --page: #f4fbf8;
+      --card: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--page);
+      color: var(--ink);
+      font: 16px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    main { width: min(820px, calc(100% - 32px)); margin: 0 auto; padding: 48px 0 72px; }
+    header, section {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: clamp(22px, 5vw, 40px);
+      margin-bottom: 18px;
+      box-shadow: 0 14px 38px rgba(20, 72, 53, .06);
+    }
+    nav { display: flex; gap: 18px; margin-bottom: 24px; }
+    a { color: var(--green); font-weight: 700; }
+    h1 { margin: 4px 0 8px; font-size: clamp(2.2rem, 7vw, 4rem); line-height: 1.05; }
+    h2 { margin: 0 0 10px; font-size: 1.25rem; }
+    p:last-child, ul:last-child { margin-bottom: 0; }
+    .eyebrow { color: var(--green); font-size: .78rem; font-weight: 850; letter-spacing: .12em; text-transform: uppercase; }
+    .summary { color: var(--muted); font-size: 1.08rem; }
+    .notice { background: var(--mint); border-color: #bcebd8; }
+    .meta { color: var(--muted); font-size: .92rem; }
+    li { margin-bottom: 8px; }
+    footer { color: var(--muted); text-align: center; font-size: .9rem; padding-top: 10px; }
+  </style>
+</head>
+<body>
+  <main>
+    <nav aria-label="Legal pages">
+      <a href="./" aria-current="page">Privacy Policy</a>
+      <a href="terms-of-use.html">Terms of Use</a>
+    </nav>
+
+    <header>
+      <div class="eyebrow">Selfcare Scan · Legal</div>
+      <h1>Privacy Policy</h1>
+      <p class="summary">Selfcare Scan does not sell personal data or run advertising. Full-size scan photos are used for analysis but are not kept in scan history.</p>
+      <p class="meta"><strong>Effective:</strong> 7 September 2026</p>
+    </header>
+
+    <section class="notice">
+      <h2>Important health notice</h2>
+      <p>Selfcare Scan is a cosmetic wellness and tracking tool for adults. It is not a medical device and does not diagnose, prevent, or treat health conditions.</p>
+    </section>
+
+    <section>
+      <h2>Information we process</h2>
+      <ul>
+        <li><strong>Account data:</strong> email address, authentication identifier, and account timestamps. Supabase handles authentication credentials; Selfcare Scan does not store your plain-text password.</li>
+        <li><strong>Skin profile data:</strong> skin type, concerns, allergy information, pregnancy or planning status, and onboarding status.</li>
+        <li><strong>Scan data:</strong> capture time and source, cosmetic measurements for redness, blemishes, uneven tone, texture, and shine, analysis confidence, and notes.</li>
+        <li><strong>Images:</strong> the face photo submitted for analysis and one small thumbnail of the latest scan.</li>
+        <li><strong>Coach data:</strong> messages, recent conversation context, skin profile details, and current skin signals needed to answer.</li>
+        <li><strong>Subscription data:</strong> app user identifier, entitlement status, and purchase history processed by RevenueCat and the applicable app store. We do not receive full payment-card details.</li>
+        <li><strong>Technical data:</strong> service providers may process IP address, device, request, security, and diagnostic information needed to operate and protect their services.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Photos and AI processing</h2>
+      <p>A full-size scan photo is transmitted through an authenticated Supabase Edge Function to Google Gemini to generate cosmetic measurements. The app deletes its temporary full-size capture after processing and does not save full-size photos in scan history.</p>
+      <p>For the latest report preview, the app creates a small JPEG thumbnail up to 160 pixels wide. It is stored in private Supabase Storage and replaces the previous thumbnail. Historical scan rows contain measurements, not images.</p>
+      <p>Google may retain or otherwise process API inputs and outputs for security, abuse prevention, and other purposes described in the Gemini API terms applicable to the service plan and region. Do not submit a photo you do not have permission to use.</p>
+    </section>
+
+    <section>
+      <h2>How we use information</h2>
+      <ul>
+        <li>Create and secure your account.</li>
+        <li>Produce cosmetic skin reports and track changes over time.</li>
+        <li>Personalize routines, product guidance, and AI coach responses.</li>
+        <li>Sync your profile and measurements across signed-in devices.</li>
+        <li>Provide, verify, and restore subscription access.</li>
+        <li>Prevent abuse, troubleshoot failures, and protect the service.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Service providers</h2>
+      <p>We disclose only the information needed to providers that operate the service on our behalf:</p>
+      <ul>
+        <li><a href="https://supabase.com/privacy" rel="external">Supabase</a> for authentication, database, private storage, and Edge Functions.</li>
+        <li><a href="https://ai.google.dev/gemini-api/terms" rel="external">Google Gemini</a> for scan analysis and AI coach responses.</li>
+        <li><a href="https://www.revenuecat.com/privacy" rel="external">RevenueCat</a> for subscription entitlement and purchase-history processing.</li>
+        <li>Google Play or the Apple App Store for purchase and subscription billing.</li>
+      </ul>
+      <p>We do not sell personal information and do not use it for targeted advertising.</p>
+    </section>
+
+    <section>
+      <h2>Storage and retention</h2>
+      <p>Skin profile data and measurement history are kept in Supabase while your account remains active or until you reset that data. A local device cache may be used for continuity and migration. The latest thumbnail remains until it is replaced, you reset skin data, or the associated data is deleted.</p>
+      <p>Coach conversation history is not stored in the Selfcare Scan database in the current version. Recent messages are held while the coach screen is open and sent as context with a new question. Providers may retain operational records according to their terms and legal obligations.</p>
+    </section>
+
+    <section id="delete-account">
+      <h2>Your controls and deletion</h2>
+      <p><strong>Reset skin data</strong> removes scan measurements, the latest thumbnail, and the skin profile from Selfcare Scan cloud storage and device cache. It does not delete the sign-in account or cancel an app-store subscription.</p>
+      <p><strong>Delete account</strong> in the app's Account settings permanently deletes the sign-in account, skin profile, scan measurements, latest thumbnail, and local account cache. This cannot be undone.</p>
+      <p>For access, correction, export, objection, restriction, or complete account-deletion requests without the app, email <a href="mailto:03ppcv@gmail.com?subject=Delete%20my%20Selfcare%20Scan%20account">03ppcv@gmail.com</a> from the email address used for the account. Never send your password. Identity verification may be required. Deleting an app account does not automatically cancel a store subscription.</p>
+    </section>
+
+    <section>
+      <h2>Security, transfers, and your rights</h2>
+      <p>We use authenticated access, encrypted network connections, private storage, and per-account database rules. No storage or transmission method is completely secure. Providers may process data in countries other than your own, subject to their safeguards and applicable law.</p>
+      <p>Your privacy rights vary by location and may include access, correction, deletion, portability, restriction, or objection. You may also complain to the privacy regulator that applies where you live.</p>
+    </section>
+
+    <section>
+      <h2>Changes and contact</h2>
+      <p>We may update this policy as the app or providers change. The effective date will be revised when material updates are published. For privacy questions, email <a href="mailto:03ppcv@gmail.com">03ppcv@gmail.com</a>.</p>
+    </section>
+
+    <footer>© 2026 Selfcare Scan</footer>
+  </main>
+</body>
+</html>
