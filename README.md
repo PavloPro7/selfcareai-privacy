@@ -1,7 +1,7 @@
-# Privacy and terms
+# Selfcare Scan legal pages
 
-Legal pages for Selfcare Scan live here so they stay separate from the
-skincare notes in the main `docs` folder.
+This repository publishes the Privacy Policy and Terms of Use for Selfcare
+Scan.
 
 ## Files
 
@@ -10,12 +10,12 @@ skincare notes in the main `docs` folder.
 
 ## Google Play links
 
-Use the published Privacy Policy address for the **Privacy policy** field.
-Check the address in an incognito window before submitting it; do not assume a
-GitHub Pages address from the repository name.
+Use these addresses in Google Play:
 
-For **Delete account URL**, use the Privacy Policy address followed by
-`#delete-account`. The public page already contains that section.
+- **Privacy policy:** `https://pavlopro7.github.io/selfcareai-privacy/`
+- **Delete data URL:** `https://pavlopro7.github.io/selfcareai-privacy/#delete-data`
+- **Delete account URL:** `https://pavlopro7.github.io/selfcareai-privacy/#delete-account`
+- **Terms of Use:** `https://pavlopro7.github.io/selfcareai-privacy/terms-of-use.html`
 
 ## Account deletion API
 
